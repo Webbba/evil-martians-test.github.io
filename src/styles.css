@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/inter-regular/inter-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./assets/fonts/inter-regular/inter-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./assets/fonts/inter-regular/inter-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('./assets/fonts/inter-regular/inter-regular.woff')
+      format('woff'),
+    /* Modern Browsers */ url('./assets/fonts/inter-regular/inter-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('./assets/fonts/inter-regular/inter-regular.svg#Manrope')
+      format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/inter-bold/inter-bold.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./assets/fonts/inter-bold/inter-bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./assets/fonts/inter-bold/inter-bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('./assets/fonts/inter-bold/inter-bold.woff')
+      format('woff'),
+    /* Modern Browsers */ url('./assets/fonts/inter-bold/inter-bold.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('./assets/fonts/inter-bold/inter-bold.svg#Manrope')
+      format('svg'); /* Legacy iOS */
+}
+
+* {
+  font-family: 'Inter';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}

@@ -1,0 +1,5 @@
+{
+  "token": "some token",
+  "refreshToken": "some refresh token",
+  "userId": "user id"
+}

@@ -1,0 +1,109 @@
+.input-label {
+  display: block;
+  width: 100%;
+  position: relative;
+
+  & .input {
+    width: 100%;
+    height: 60px;
+    background: #eff1f4;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: ease 0.3s;
+    padding: 0px 40px 0 20px;
+    outline: none;
+
+    &:focus,
+    &:active,
+    &.input-filled {
+      background: #fff;
+      border: 1px solid #dadde1;
+    }
+
+    &.input-filled {
+      padding: 12px 40px 0 20px;
+    }
+
+    &.input-error {
+      border: 1px solid rgba(234, 33, 33, 0.4);
+    }
+  }
+
+  & .input-placeholder {
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: ease 0.3s;
+    left: 20px;
+    pointer-events: none;
+
+    &.input-placeholder-small {
+      font-size: 12px;
+      line-height: 16px;
+      top: 17px;
+    }
+  }
+
+  & .icon-wrapper {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  & .input-password-hint {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #dadde1;
+    box-shadow: 0px 8px 12px #edf0f5;
+    left: calc(100% + 20px);
+    width: 191px;
+    height: 102px;
+    box-sizing: border-box;
+    padding: 16px 18px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      border-bottom: 1px solid #dadde1;
+      border-left: 1px solid #dadde1;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      left: -9px;
+    }
+
+    & .input-password-hint-title,
+    & .input-password-hint-text {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      color: #000;
+      margin-bottom: 6px;
+    }
+
+    & .input-password-hint-text {
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.input-error-text {
+  font-size: 12px;
+  line-height: 20px;
+  color: #ea2121;
+  margin-top: 12px;
+}

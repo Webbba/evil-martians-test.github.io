@@ -1,0 +1,9 @@
+.header {
+  background: #fff;
+  padding: 36px 80px 0;
+  color: #663f4c;
+
+  @media (max-width: 768px) {
+    padding: 20px 0 0;
+  }
+}
