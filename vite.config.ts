@@ -4,6 +4,7 @@ import eslintPlugin from '@nabla/vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/webbba/',
   plugins: [react(), eslintPlugin()],
   optimizeDeps: {
     include: ['react', 'react-dom'],
